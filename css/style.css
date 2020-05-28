@@ -1,0 +1,559 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 16px;
+    color: black;
+    background-color: #fff;
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1{
+    font-size: 2em;
+    font-family: 'Sacramento', cursive;
+    color: #fff;
+    padding: 5rem 0 1rem 0;
+    flex: 0 1 100%;
+}
+
+h2{
+    font-size: 4em;
+    font-family: 'Sacramento', cursive;
+    color: deeppink;
+}
+
+h3{
+    font-size: 1.5em;
+    font-family: 'Work Sans', sans-serif;
+    color: #000;
+    padding: 1em;
+}
+
+p{
+    font-size: 1em;
+    color: rgb(112,112,112)
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    
+}
+
+li{
+    list-style: none;
+}
+
+/*----------------------- End of base style --------------------------*/
+
+
+/*----------------------- Header --------------------------*/
+header{
+    background: linear-gradient(rgba(100,100,100,0.5), rgba(100,100,100,0.5)), url(../images/img_bg_1.jpg); /* darker the bg image */
+    background-size: cover;
+    padding: 1em;
+}
+
+/*------------------------- Navigation ---------------------------*/
+#navigation{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    font-size: 3em;
+    font-family: 'Sacramento', cursive;
+    color: #fff;
+}
+
+#menuIcon{
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 100%;
+    margin-top: 2em;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+}
+
+nav ul li{
+    display: flex;
+    min-width: 100%;
+}
+
+nav ul a{
+    display: block;
+    font-family: 'Work Sans', sans-serif;
+    flex: 0 1 100%;
+    text-align: center;
+    padding: 1em 0;
+    background-color: transparent;
+    color: silver;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+    text-transform: uppercase;
+}
+
+nav ul a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/*-------------------------- End of Navigation ---------------------------*/
+
+/*-------------------- Header content ---------------------------*/
+#headerContent{
+    text-align: center;
+    color: #fff;
+}
+
+#headerContent p{
+    color: #fff;
+    padding-bottom: 10em;
+    font-weight: bold;
+}
+
+#headerContent .fas{
+    font-size: 0.8em;
+}
+
+/*-------------------- End of Header content ---------------------------*/
+
+/*----------------------- End of Header --------------------------*/
+
+/*----------------------- date section --------------------------*/
+
+#date{
+    padding: 1em;
+    text-align: center;
+}
+
+#date h2{
+    color: #FF1593;
+    padding: 5rem 0 0 0;
+    font-size: 4em;
+}
+
+
+/*----------------------- End of date section --------------------------*/
+
+/*----------------------- Description section --------------------------*/
+
+#description{
+    padding: 1em;
+    text-align: center;
+}
+
+#description h3{
+    font-size: 2em;
+    font-family: 'Sacramento', cursive;
+    color: #ff71b5;
+    padding: 0.5em 0;
+}
+
+#description img{
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+#description p{
+    padding-bottom: 2em; 
+}
+
+#heart{
+    display: none;
+}
+
+/*----------------------- End of Description section --------------------------*/
+
+/*----------------------- Attend section --------------------------*/
+
+#attend{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(100,100,100,0.5), rgba(100,100,100,0.5)), url(../images/img_bg_2.jpg); /* darker the bg image */
+    background-size: cover;
+    padding: 1em;
+}
+
+#attend h2{
+    font-size: 4em;
+    color: #fff;
+    padding: 0.5em 0;
+    padding
+
+}
+
+#attend p{
+    color: silver;
+    text-align: center;
+}
+
+#attend form{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+    width: 100%;
+}
+
+#attend input{
+    max-width: 100%;
+    background-color: rgb(122,119,104);
+    color: rgb(208,204,195);
+    border: none;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 0.5em;
+}
+
+#attend input::placeholder{
+    color: rgb(208,204,195);
+}
+
+#attend input[type=submit]{
+    cursor: pointer;
+    background-color: deeppink;
+    color: silver;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*----------------------- End of Attend section --------------------------*/
+
+/*----------------------- contact section --------------------------*/
+
+#contact{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0em 1em; 
+    max-width: 100%;
+}
+
+#contact h3{
+    flex: 0 1 100%;
+    color: #000;
+    font-size: 1.5em;
+    padding: 0.5em 0 1em 0;
+    font-family: work sans, Arial, Helvetica, sans-serif;
+}
+
+.contactDetails{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.contactDetails:first-of-type{
+    padding-bottom: 0;
+}
+
+.contactDetails img{
+    display: block;
+    flex: 0 1 5%;
+}
+
+.contactDetails p, .contactDetails a{
+    flex: 0 1 80%;
+}
+.contactDetails:first-of-type p{
+    flex: 0 1 200px;
+    color: rgb(112,112,112);
+}
+
+.contactDetails a{
+    color: deeppink;
+}
+
+/*----------------------- End of contact section --------------------------*/
+
+/*----------------------- map section --------------------------*/
+
+#map{
+    box-sizing: border-box;
+    margin-top: 1em;
+    width: 100%;
+}
+
+#map iframe{
+    width: 100%;
+    height: 35vh; 
+    border: none;
+}
+
+/*----------------------- End of map section --------------------------*/
+
+/*----------------------- footer --------------------------*/
+
+footer{
+    display: flex;
+    flex-wrap:  wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 1em 1em 1em;
+}
+
+footer p{
+    flex: 0 1 100%;
+    padding: 1em 0;
+}
+
+footer p:nth-child(2){
+    font-size: 0.8em;
+    padding-top: 0;
+}
+
+footer span{
+    color: deeppink;
+}
+
+#icons{
+    display: flex;
+    justify-content: center;
+    flex: 0 1 100%;
+    padding: 1em 0 0 0;
+}
+
+#icons a{
+    margin: 0 1em;
+}
+
+
+  /* scroll to top button */
+  
+#toTop{
+    display: none; /* hidden by default */
+    position: fixed;
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99;
+    cursor: pointer;
+
+}
+
+.fa-arrow-up{
+    margin: 0 0 0 auto;
+    background-color: rgb(112,112,112);
+    color: #fff;
+    font-size: 2em;
+    padding: 0.4em 0.5em;
+    border-radius: 50%;
+}
+
+.fa-arrow-up:hover{
+    background-color: #000;
+}
+
+/*----------------------- End of footer --------------------------*/
+
+/*----------------------- @media queries --------------------------*/
+
+@media only screen and (min-width: 768px){
+
+
+    /* description section */
+
+    #description{
+        padding: 1em;
+        text-align: initial;
+    }
+
+    #him, #her{
+        display: flex;
+    }
+
+    h1{
+        padding-bottom: 1em;
+    }
+
+    #description img{
+        width: 150px;
+        height: 150px;
+        margin: 1em 0;
+    }
+
+    #him img{
+        order: 1;
+        margin-left: 2em;
+    }
+
+    #himContent{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        text-align: end;
+    }
+
+    #her img{
+        margin-right: 2em;
+    }
+
+    #herContent{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* End of description section */
+    /* contact section */
+
+    #contact h3{
+        padding-left: 0.2em;
+    }
+    
+    /* End of contact section */
+}
+
+@media only screen and (min-width: 1200px){
+
+    h1{
+        font-size: 5em;
+        padding-bottom: 0.2em;
+    }
+
+    /* Navigation */
+
+    #navigation{
+        padding: 0 2em;
+    }
+
+    #menuIcon{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;;
+        flex: 0 1 50%;
+        margin-top: 0em;
+    }
+    
+    nav ul{
+        flex-direction: row;
+        align-items: initial;
+        min-width: auto;
+    }
+    
+    nav ul li{
+        display: flex;
+        justify-content: space-around;
+        min-width: auto;
+    }
+    
+    nav ul a{
+        display: block;
+        padding: 0.5em 1em;
+        border-bottom: none
+    }
+
+    nav ul a:hover{
+        background-color: transparent;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    
+    /* End of Navigation*/
+
+    /* description section */
+
+    #description{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        padding: 1em 10em;
+    }
+
+    #him, #her{
+        max-width: 50%;
+    }
+
+    #heart{
+        display: block;
+        width: 3em;
+        height: 3em;
+        color: deeppink;
+        line-height: 3em;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 85px;
+    }
+
+    /* End of description section */
+
+    /* attend section */
+
+    #attend form{
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 75%
+    }
+
+    #attend h2{
+        padding-top: 1em;
+    }
+
+    input{
+        width:30%;
+    }
+
+    /* End of attend section */
+
+    /* contact section */
+
+    #contact{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #contact h3{
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        flex: 0 1 100%;
+        color: #000;
+    }
+
+    .contactDetails img{
+        margin-right: 1em;
+    }
+
+    .contactDetails:first-of-type{
+        padding-bottom: 1em;
+    }
+
+    .contactDetails p, .contactDetails a{
+        flex: 1 1 25%;
+    }
+
+    .contactDetails:first-of-type p{
+        flex: 1 1 25%;
+    }
+
+    /* End of contact section */
+}
+/*----------------------- End of @media queries --------------------------*/
